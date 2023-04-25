@@ -3,6 +3,9 @@ import sqlite3
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, filters, CallbackContext
 import os
+from flask import Flask
+
+app = Flask(__name__)
 
 # Введите ваш токен сюда
 TELEGRAM_TOKEN = '6172133477:AAHbySYc2ealCwulrSjNXfHcN6kvsRjXzvE'
@@ -158,3 +161,4 @@ def main():
 if __name__ == '__main__':
     create_database()
     main()
+    app.run(port=port)
