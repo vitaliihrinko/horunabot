@@ -2,12 +2,14 @@ import logging
 import sqlite3
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, filters, CallbackContext
+import os
 
 # Введите ваш токен сюда
 TELEGRAM_TOKEN = '6172133477:AAHbySYc2ealCwulrSjNXfHcN6kvsRjXzvE'
 
 allowed_usernames = ['vitaliihrinko', 'SOLO_UA', 'yarohoruna']
 
+port = int(os.environ.get("PORT", 5000))
 
 # Декоратор для проверки доступа к команде
 def restricted(func):
