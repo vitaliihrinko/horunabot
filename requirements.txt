@@ -76,3 +76,4 @@ pyparsing
 Jinja2
 zipp
 Flask
+gunicorn
