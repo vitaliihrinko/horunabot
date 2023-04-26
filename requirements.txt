@@ -4,4 +4,3 @@ update~=0.0.1
 filters~=1.3.2
 updater~=0.2.0
 MessageHandler~=1.0.2
-CallbackContext
